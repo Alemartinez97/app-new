@@ -1,0 +1,15 @@
+{
+	"@nativescript/core": {
+		"/Users/almasanc/apps/apppp/node_modules/@nativescript/core/platforms/android/native-api-usage.json": "34ee0e9771ad7dd9d388c191734d71507a04565a"
+	},
+	"tns-core-modules-widgets": {
+		"/Users/almasanc/apps/apppp/node_modules/tns-core-modules-widgets/platforms/android/widgets-release.aar": "ea387e7a96a4ccb0df5c645b313c5dcf8042a0bb"
+	},
+	"nativescript-photoviewer": {
+		"/Users/almasanc/apps/apppp/node_modules/nativescript-photoviewer/platforms/android/include.gradle": "7b6817667fc9144d9e8615019f4edccf1e8376a8",
+		"/Users/almasanc/apps/apppp/node_modules/nativescript-photoviewer/platforms/android/AndroidManifest.xml": "a4eb9ce5d181f88ee2301ec1850ce64f140ef3ac"
+	},
+	"nativescript-youtubeplayer-inline": {
+		"/Users/almasanc/apps/apppp/node_modules/nativescript-youtubeplayer-inline/platforms/android/include.gradle": "119a2a58862eb59000f83a7f9034df6039668ee1"
+	}
+}

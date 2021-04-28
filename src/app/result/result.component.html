@@ -1,0 +1,24 @@
+<Page.actionBar>
+  <ActionBar title="Resultados">
+    <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+  </ActionBar>
+</Page.actionBar>
+
+<GridLayout>
+  <ScrollView class="page">
+    <StackLayout>
+      <!-- On Android the card view plugin requires adding an external library
+				therefore it can't be demoed on Playground. You will have to download this project
+				and build it locally to try it on Android -->
+      <CardView *ngFor="let item of items.articles" class="card" elevation="40" radius="10" ios:shadowRadius="3">
+        <StackLayout class="card-layout" (tap)="onClick($event, item)">
+          <Label class="h2" [text]="item.title" textWrap="true"></Label>
+          <!-- <ImageZoom [src]="item.imageUrl" maxZoom="5" minZoom="2"></ImageZoom> -->
+          <Image [src]="item.imageUrl" stretch="none" backgroundColor="#ddd" class="logo"></Image>
+          <Label class="date" textWrap="true" [text]="item.publishedAt | date: 'yyyy/MM/dd'">
+          </Label>
+        </StackLayout>
+      </CardView>
+    </StackLayout>
+  </ScrollView>
+</GridLayout>

@@ -1,0 +1,25 @@
+<FlexboxLayout class="flexboxLayout">
+  <StackLayout class="stackLayout">
+    <TextField
+      hint="Correo"
+      keyboardType="email"
+      autocorrect="false"
+      autocapitalizationType="none"
+      [(ngModel)]="user.email"
+      class="input input-border"
+    ></TextField>
+    <TextField
+      hint="Contraseña"
+      secure="true"
+      [(ngModel)]="user.password"
+      class="input input-border"
+    ></TextField>
+
+    <Button
+      text="Iniciar sesión"
+      class="btn btn-primary"
+      (tap)="submit()"
+    ></Button>
+    <Button   class="btn btn-primary" [nsRouterLink]="['/register']" text="Crear Cuenta"></Button>
+  </StackLayout>
+</FlexboxLayout>

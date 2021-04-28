@@ -1,0 +1,27 @@
+.flexboxLayout {
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: greenyellow;
+    border-radius: 13em/3em;
+  }
+  .stackLayout {
+    width: 300;
+    padding: 10 16;
+    background-color:rgba(0, 60, 255, 0.157);
+    border-radius: 13em/3em;
+  }
+  Button, TextField {
+    border-radius: 13em/3em;
+  }
+  .btn-primary {
+    background-color:honeydew;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .dark {
+    background-color: #301217;
+  }
+  .dark TextField {
+    color:  cornflowerblue;
+  }

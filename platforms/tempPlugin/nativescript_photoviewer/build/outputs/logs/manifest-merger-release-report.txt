@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:1-6:12
+	package
+		ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:70-121
+		INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+		INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+		ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:1-6:12
+		INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+		ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:1-6:12
+		INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:3:3-5:17
+activity#com.etiennelawlor.imagegallery.library.activities.ImageGalleryActivity
+ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:4:5-205
+	android:configChanges
+		ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:4:101-162
+	android:theme
+		ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:4:163-203
+	android:name
+		ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml:4:15-100
+uses-sdk
+INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+		ADDED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml
+		INJECTED from /Users/almasanc/apps/apppp/platforms/tempPlugin/nativescript_photoviewer/src/main/AndroidManifest.xml

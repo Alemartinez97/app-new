@@ -1,0 +1,38 @@
+<Page.actionBar>
+  <ActionBar title="Ultimas Noticias">
+    <ActionItem android.systemIcon="ic_menu_search" [nsRouterLink]="['/search']"></ActionItem>
+    <ActionItem text="Cerrar sesión" (tap)="onLogout()" ios.systemIcon="16" ios.position="right"
+      android.position="popup">
+    </ActionItem>
+  </ActionBar>
+</Page.actionBar>
+
+<GridLayout>
+  <ScrollView class="page" row="5">
+    <StackLayout>
+      <CardView *ngFor="let item of items.articles" class="card" elevation="40"  radius="10" ios:shadowRadius="3">
+        <StackLayout class="card-layout" [nsRouterLink]="['/item', item._id]">
+          <Label class="h2" [text]="item.title" textWrap="true"></Label>
+          <!-- <ImageZoom [src]="item.imageUrl" maxZoom="5" minZoom="2"></ImageZoom> -->
+          <Image class="logo" [src]="item.imageUrl" backgroundColor="black" width="100%" height="300"></Image>
+          <!-- <VideoPlayer
+          src="https://itsontheway.s3.amazonaws.com/Subscribe+te+y+ayudanos+a+mejor+el+canal.mp4"
+          autoplay="false"
+          loop="true"
+          controls="true"
+          height="3000"
+          fill="true"
+          scaleY="1.2"
+          scaleX="1.2"
+        ></VideoPlayer> -->
+          <Label class="date" textWrap="true" [text]="item.publishedAt | date: 'yyyy/MM/dd'">
+          </Label>
+          <GridLayout columns="auto,auto,auto,auto" horizontalAlignment="center" paddingBottom="10">
+            <!-- <Button #swipeleft class="btn fa" col="0" [text]="'fa-times' | fonticon"></Button> -->
+            <Button #swiperight [class]="classCss" col="3"  text="Me Gusta" (tap)="onClick($event,item._id)"></Button>
+          </GridLayout>
+        </StackLayout>
+      </CardView>
+    </StackLayout>
+  </ScrollView>
+</GridLayout>

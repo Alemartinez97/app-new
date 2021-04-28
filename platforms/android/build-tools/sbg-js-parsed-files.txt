@@ -1,0 +1,4 @@
+/Users/almasanc/apps/apppp/platforms/android/app/src/main/assets/app/runtime.js
+/Users/almasanc/apps/apppp/platforms/android/app/src/main/assets/app/bundle.js
+/Users/almasanc/apps/apppp/platforms/android/app/src/main/assets/app/vendor.js
+/Users/almasanc/apps/apppp/platforms/android/app/src/main/assets/app/tns-java-classes.js

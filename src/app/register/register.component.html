@@ -1,0 +1,47 @@
+<ActionBar title="Crear Usuario"> </ActionBar>
+<FlexboxLayout class="flexboxLayout">
+  <StackLayout class="stackLayout">
+    <TextField
+      hint="Nombre completo"
+      [(ngModel)]="user.fullname"
+      class="input input-border"
+    ></TextField>
+    <TextField
+      hint="Correo"
+      keyboardType="email"
+      autocorrect="false"
+      autocapitalizationType="none"
+      [(ngModel)]="user.email"
+      class="input input-border"
+    ></TextField>
+    <Label
+      class="validation"
+      [visibility]="correctEmail ? 'visible' : 'collapse'"
+      text="El correo esta mal escrito"
+    ></Label>
+    <!-- <Label *ngIf="hasEmailErrors()" class="eloha-font-semibold m-t-2 login-field-label color-danger font-size-md" row="2" [text]="getEmailError()"></Label> -->
+    <TextField
+      hint="Contraseña"
+      secure="true"
+      [(ngModel)]="user.password"
+      class="input input-border"
+    ></TextField>
+    <TextField
+      hint="Confirmar Contraseña"
+      secure="true"
+      [(ngModel)]="user.password2"
+      class="input input-border"
+    ></TextField>
+    <Label
+      class="validation"
+      [visibility]="elementModel ? 'visible' : 'collapse'"
+      text="Las contraseñas no coinciden"
+    ></Label>
+    <Button
+      text="Crear Cuenta"
+      class="btn btn-primary"
+      (tap)="submit()"
+    ></Button>
+    <Button  class="btn btn-primary"  [nsRouterLink]="['/login']" text="E iniciar sesión"></Button>
+  </StackLayout>
+</FlexboxLayout>

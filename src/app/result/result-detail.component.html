@@ -1,0 +1,26 @@
+<ActionBar title="Detalle">
+  <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+  <ActionItem android.systemIcon="ic_menu_share" (tap)="onShare()"></ActionItem>
+</ActionBar>
+<GridLayout>
+  <ScrollView class="page">
+    <StackLayout>
+      <CardView class="card" elevation="40" radius="10" ios:shadowRadius="3">
+        <StackLayout class="card-layout">
+          <Label class="h2" [text]="item.title" textWrap="true"></Label>
+          <!-- <ImageZoom [src]="item.imageUrl" maxZoom="5" minZoom="2"></ImageZoom> -->
+          <Image class="logo" [src]="item.imageUrl" stretch="aspectFill" pinchToZoom backgroundColor="#ddd"></Image>
+          <Label class="body" textWrap="true" [text]="item.description">
+          </Label>
+          <!-- <VideoPlayer
+            src="https://itsontheway.s3.amazonaws.com/Subscribe+te+y+ayudanos+a+mejor+el+canal.mp4"
+            autoplay="true"
+            height="300"
+          ></VideoPlayer> -->
+          <Label class="date" textWrap="true" [text]="item.publishedAt | date: 'yyyy/MM/dd'"></Label>
+          <Button textWrap="true" (tap)="onClick()" text="Fuente" class="my-button"></Button>
+        </StackLayout>
+      </CardView>
+    </StackLayout>
+  </ScrollView>
+</GridLayout>

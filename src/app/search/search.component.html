@@ -1,0 +1,71 @@
+<Page.actionBar>
+  <ActionBar title="Buscar">
+    <NavigationButton
+      android.systemIcon="ic_menu_back"
+      (tap)="goBack()"
+    ></NavigationButton>
+  </ActionBar>
+</Page.actionBar>
+<StackLayout row="4">
+  <SearchBar
+    hint="Buscar Noticias ..."
+    [text]="searchPhrase"
+    (textChange)="onTextChanged($event)"
+    (clear)="onClear($event)"
+    (submit)="onSubmit($event)"
+  >
+  </SearchBar>
+  <Label class="title" text="Filtrar por categoria"></Label>
+  <FlexboxLayout flexDirection="row" class="list-group-item">
+    <Label
+      text="Politica"
+      class="label"
+      verticalAlignment="center"
+      style="width: 60%"
+    >
+    </Label>
+    <Switch
+      checked="false"
+      (checkedChange)="onChecked($event, 'POLITICA')"
+    ></Switch>
+  </FlexboxLayout>
+  <FlexboxLayout flexDirection="row" class="list-group-item">
+    <Label
+      text="Deportes"
+      class="label"
+      verticalAlignment="center"
+      style="width: 60%"
+    >
+    </Label>
+    <Switch
+      checked="false"
+      (checkedChange)="onChecked($event, 'DEPORTES')"
+    ></Switch>
+  </FlexboxLayout>
+  <FlexboxLayout flexDirection="row" class="list-group-item">
+    <Label
+      text="Economia"
+      class="label"
+      verticalAlignment="center"
+      style="width: 60%"
+    >
+    </Label>
+    <Switch
+      checked="false"
+      (checkedChange)="onChecked($event, 'ECONOMIA')"
+    ></Switch>
+  </FlexboxLayout>
+  <FlexboxLayout flexDirection="row" class="list-group-item">
+    <Label
+      text="Salud"
+      class="label"
+      verticalAlignment="center"
+      style="width: 60%"
+    >
+    </Label>
+    <Switch
+      checked="false"
+      (checkedChange)="onChecked($event, 'SALUD')"
+    ></Switch>
+  </FlexboxLayout>
+</StackLayout>

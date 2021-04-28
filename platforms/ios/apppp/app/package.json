@@ -1,0 +1,10 @@
+{
+    "main": "bundle",
+    "android": {
+        "v8Flags": "--expose_gc",
+        "markingMode": "none"
+    },
+    "dependencies": {
+        "@happones/nativescript-image-zoom": "^4.0.2"
+    }
+}

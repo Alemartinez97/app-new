@@ -1,0 +1,40 @@
+<ActionBar title="Menu" class="action-bar">
+    <ActionItem
+    [nsRouterLink]="['/items']"
+    android.systemIcon="menuitem_background"
+    android.position="actionBar"
+    ></ActionItem>
+    <ActionItem
+    [nsRouterLink]="['/search']"
+    android.systemIcon="ic_menu_search"
+    ></ActionItem>
+  <ActionItem 
+  [nsRouterLink]="['/items']"
+  android.systemIcon="ic_menu_today">
+  </ActionItem>
+</ActionBar>
+<BottomNavigation>
+  <TabStrip>
+    <TabStripItem class="navigation__item">
+      <Label  text="Home" [nsRouterLink]="['/items']"></Label>
+    </TabStripItem>
+    <TabStripItem class="navigation__item">
+      <Label text="Browse"></Label>
+    </TabStripItem>
+    <TabStripItem class="navigation__item">
+      <Label text="Search"></Label>
+    </TabStripItem>
+  </TabStrip>
+
+  <TabContentItem>
+    <page-router-outlet name="homeTab"></page-router-outlet>
+  </TabContentItem>
+
+  <TabContentItem>
+    <page-router-outlet name="browseTab"></page-router-outlet>
+  </TabContentItem>
+
+  <TabContentItem>
+    <page-router-outlet name="searchTab"></page-router-outlet>
+  </TabContentItem>
+</BottomNavigation>
